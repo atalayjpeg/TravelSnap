@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "TravelSnap",
+    "slug": "TravelSnap",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "permissions": ["android.permission.CAMERA"],
+      "windowSoftInputMode": "adjustPan",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-media-library",
+          {
+            "photosPermission": "Allow app to access your photos.",
+            "savePhotosPermission": "Allow app to save photos.",
+            "isAccessMediaLocationEnabled": "true"
+          }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow app to access your photos.",
+          "cameraPermisson":"Allow app to access camera?",
+          "microphonePermission": "Allow app to access microphone?"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow app to use your location."
+        }
+      ]
+    ]
+  }
+}
